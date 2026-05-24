@@ -2,7 +2,7 @@
 
 **The project:** I built an AI contract reviewer on top of the Box API from scratch using Next.js, TypeScript, the full OAuth flow, file downloads, PDF extraction, and an LLM layer on top. During the process I made note of what went well and what could be made smoother.
 
-Link to demo snaphot on [Box](https://app.box.com/s/hw6kw69uz704qzd98r0pe04c5zzw9lqj)
+Link to demo snaphot on [Box](https://app.box.com/s/t7xq95a3meaygannfpwrxvx7zue88djs)
 
 ---
 
