@@ -6,7 +6,7 @@ Link to demo snaphot on [Box](https://app.box.com/s/hw6kw69uz704qzd98r0pe04c5zzw
 
 ---
 
-## What's already working well
+### What's working well
 
 - **The Developer Console is polished.** The [Create Your Application](https://developer.box.com/guides/getting-started/first-application) and [Developer Tokens](https://developer.box.com/guides/authentication/tokens/developer-tokens) guides are straightforward, so going from signing up to my first API call was painless. One-click dev token generation made connecting to Box's API easy.
 - **The TypeScript SDK is useful.** Autocomplete works, type errors catch mistakes early, and method naming is consistent.
@@ -14,35 +14,34 @@ Link to demo snaphot on [Box](https://app.box.com/s/hw6kw69uz704qzd98r0pe04c5zzw
 
 ---
 
-## Areas to build on
+### Areas to build on
 
-### 1. An AI/RAG entry point
+#### 1. An AI/RAG entry point
 
 Box's content model maps to what AI engineers need: structured document storage, rich metadata, reliable retrieval.
 However, connective features such as a LangChain integration, LlamaIndex loader, or chunking/embedding guide do not exist yet.
 Publishing a Box document loader for either framework would connect Box to developers building RAG pipelines. A full RAG quickstart (Box → text extraction → embeddings → vector store) could be the most-linked Box developer content in the AI community, probably within weeks of publication.
 
-### 2. A Next.js App Router quickstart
+#### 2. A Next.js App Router quickstart
 
 Next.js is the most common modern React framework, and building on Box with it has some specific considerations not covered in the docs right now, including stream handling, route handlers, ESM package compatibility.
 A focused quickstart (dev token → first file download → metadata fetch → stream handling) could get a developer to a working app in 30 minutes.
 
-### 3. A PDF text extraction guide — _impact: 5/5_
+#### 3. A PDF text extraction guide
 
 There's no recommended path for PDF text extraction in Node.js, and both popular libraries (pdf-parse, pdfjs-dist) require non-obvious workarounds in modern Next.js environments. This was the most time-consuming obstacle in this project.
 A guide that picks a library, shows the code, and explains the Next.js-specific edge cases would save every developer building a document AI app hours of debugging.
 
-### 4. An OAuth lifecycle guide — _impact: 4/5_
+#### 4. An OAuth lifecycle guide
 
 The OAuth flow itself is well-documented in the abstract, but areas like token storage strategy, refresh handling, the natural dev token → OAuth progression isn't covered. Refresh token handling isn't mentioned until developers hit it in production. A guide that walks through the full lifecycle would meaningfully close the gap between "works on my machine" and "works in production."
 
-### 5. TypeScript examples throughout the docs — _impact: 4/5_
-
+#### 5. TypeScript examples throughout the docs
 The [sample code library](https://developer.box.com/sample-code) is heavily JavaScript-focused, which is worth revisiting. There are only two TypeScript examples in the whole catalogue. Given that the TypeScript SDK is genuinely one of Box's strengths, it's an easy win to add more TS samples in the docs too.
 
 ---
 
-## What I'd ship in 90 days
+### What I'd ship in 90 days
 
 1. **Next.js App Router quickstart**
    a step-by-step guide covering dev token setup, downloading files, reading metadata, and the stream handling quirk that catches most people out. Quick to write and immediately useful to anyone starting a modern JavaScript project.
@@ -57,7 +56,7 @@ The [sample code library](https://developer.box.com/sample-code) is heavily Java
 
 ---
 
-## Final Thoughts
+### Final Thoughts
 
 Box has a solid developer experience with its clean API, well-typed SDK, and fast onboarding.
 What's missing is the content and tooling that connects it to how AI developers are currently building, and that's exactly the work I'd want to own.
