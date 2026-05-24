@@ -1,6 +1,6 @@
 # Box Developer Experience Audit
 
-**The project:** I built an AI contract reviewer on top of the Box API from scratch using Next.js, TypeScript, the full OAuth flow, file downloads, PDF extraction, and an LLM layer on top. During the process I made note of what went well and what could be made smoother.
+**The project:** I built an AI contract reviewer on top of the Box API from scratch using Next.js, TypeScript, the full OAuth flow, file downloads, PDF extraction, and a LLM layer on top. During the process I made note of what went well and what could be made smoother.
 
 Link to demo snaphot on [Box](https://app.box.com/s/t7xq95a3meaygannfpwrxvx7zue88djs)
 
@@ -8,8 +8,8 @@ Link to demo snaphot on [Box](https://app.box.com/s/t7xq95a3meaygannfpwrxvx7zue8
 
 ### What's working well
 
-- **The Developer Console is polished.** The [Create Your Application](https://developer.box.com/guides/getting-started/first-application) and [Developer Tokens](https://developer.box.com/guides/authentication/tokens/developer-tokens) guides are straightforward, so going from signing up to my first API call was painless. One-click dev token generation made connecting to Box's API easy.
-- **The TypeScript SDK is useful.** Autocomplete works, type errors catch mistakes early, and method naming is consistent.
+- **The Developer Console is polished and intuitive.** Guides including the [Create Your Application](https://developer.box.com/guides/getting-started/first-application) and [Developer Tokens](https://developer.box.com/guides/authentication/tokens/developer-tokens) articles are thorough and straightforward, so going from signing up to my first API call was painless. One-click dev token generation made connecting to Box's API easy.
+- **The TypeScript SDK is useful.** Autocomplete is impeccable, type errors catch mistakes early, and method naming is consistent.
 - **The Files and Metadata APIs are well-suited to AI use cases.** The clean pagination, detailed metadata, and organized folder structure is solid infrastructure for the kind of retrieval systems developers are building right now.
 
 ---
@@ -18,13 +18,13 @@ Link to demo snaphot on [Box](https://app.box.com/s/t7xq95a3meaygannfpwrxvx7zue8
 
 #### 1. An AI/RAG entry point
 
-Box's content model maps to what AI engineers need: structured document storage, rich metadata, reliable retrieval.
-However, connective features such as a LangChain integration, LlamaIndex loader, or chunking/embedding guide do not exist yet.
-Publishing a Box document loader for either framework would connect Box to developers building RAG pipelines. A full RAG quickstart (Box → text extraction → embeddings → vector store) could be the most-linked Box developer content in the AI community, probably within weeks of publication.
+Box's content model maps to what AI engineers need: structured document storage, rich metadata, and reliable retrieval.
+However, connective features such as a LangChain integration, a LlamaIndex loader, or a chunking/embedding guide are not yet available.
+Publishing a Box document loader for either framework would connect Box to developers building RAG pipelines. A full RAG quickstart (Box → text extraction → embeddings → vector store) could be the most-linked Box developer content in the AI community.
 
 #### 2. A Next.js App Router quickstart
 
-Next.js is the most common modern React framework, and building on Box with it has some specific considerations not covered in the docs right now, including stream handling, route handlers, ESM package compatibility.
+Next.js is the most common modern React framework, and building on Box with it has some specific considerations not covered in the docs right now, including stream handling, route handlers, and ESM package compatibility.
 A focused quickstart (dev token → first file download → metadata fetch → stream handling) could get a developer to a working app in 30 minutes.
 
 #### 3. A PDF text extraction guide
