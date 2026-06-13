@@ -1,6 +1,6 @@
 # Box Developer Experience Audit
 
-**The project:** I built an AI contract reviewer on top of the Box API from scratch using Next.js, TypeScript, the full OAuth flow, file downloads, PDF extraction, and a LLM layer on top. During the process I made note of what went well and what could be made smoother.
+**The project:** I built an AI contract reviewer on top of the Box API from scratch using Next.js, TypeScript, the full OAuth flow, file downloads, PDF extraction, and a LLM layer on top. During the process I made note of what went well and what could be improved.
 
 Link to demo snaphot on [Box](https://app.box.com/s/t7xq95a3meaygannfpwrxvx7zue88djs)
 
@@ -59,6 +59,6 @@ The [sample code library](https://developer.box.com/sample-code) is heavily Java
 ### Final Thoughts
 
 Box has a solid developer experience with its clean API, well-typed SDK, and fast onboarding.
-What's missing is the content and tooling that connects it to how AI developers are currently building, and that's exactly the work I'd want to own.
+What's missing is the content and tooling that connects it to how AI developers are currently building, and that's exactly the kinf of work I'd want to own.
 
 ---
